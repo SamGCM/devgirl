@@ -1,0 +1,130 @@
+body{
+    overflow: hidden;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+#logo {
+    font: 700 3rem 'Ubuntu', sans-serif;
+    color: var(--black);
+    position: relative;
+}
+
+#logo::before{
+    content: '.';
+    font: 700 4rem 'Ubuntu', sans-serif;
+    color: #DF44BC;
+    position: absolute;
+    top: -27px;
+    right: 2.1rem;
+}
+
+.navbar{
+    width: 40%;
+    z-index: 2;
+}
+
+#navbar__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list__item a{
+    font: 600 2rem 'Montserrat', sans-serif;
+    color: var(--white);
+    position: relative;
+}
+
+.list__item a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -.5rem;
+    left: 0;
+    background-color: var(--white);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.list__item a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'left right';
+}
+
+#banner__left{
+    grid-area: left;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#banner__left h1{
+    font: 700 4rem 'Montserrat', sans-serif;
+    margin-left: 3rem;
+    width: 80%;
+}
+
+#banner__left p{
+    font: 500 3rem 'Montserrat', sans-serif;
+    margin: 3rem 3rem;
+    width: 80%;
+}
+
+#banner__right{
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+lottie-player{
+    width: 50rem;
+    height: auto;
+    z-index: 2;
+    animation-name: expand;
+    animation-duration: 1.75s;
+}
+
+.circle{
+    background: linear-gradient(to right, #30057B, #30057bcc);
+    background: -webkit-linear-gradient(to right, #30057B, #30057bcc);
+    width: min(80rem, 60%);
+    height: 80%;
+    position: absolute;
+    top: -11rem;
+    right: -15rem;
+    border-radius: 20%;
+    transform: rotateZ(25deg);
+}
+
+@keyframes expand {
+    from{
+        transform: scaleX(0);
+    }
+
+    to{
+        transform: scaleX(1);
+    }
+}

@@ -1,0 +1,107 @@
+body{
+    overflow: auto;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+#logo {
+    font: 700 3rem 'Ubuntu', sans-serif;
+    color: var(--black);
+    position: relative;
+}
+
+#logo::before{
+    content: '.';
+    font: 700 4rem 'Ubuntu', sans-serif;
+    color: #DF44BC;
+    position: absolute;
+    top: -27px;
+    right: 2.1rem;
+}
+
+.navbar{
+    width: 40%;
+    z-index: 2;
+}
+
+#navbar__list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list__item a{
+    font: 600 2rem 'Montserrat', sans-serif;
+    color: var(--black);
+    position: relative;
+}
+
+.list__item a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -.5rem;
+    left: 0;
+    background-color: var(--black);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.list__item a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+main{
+    margin-top: 5rem;
+}
+
+h2{
+    margin: 0 3rem;
+    font: 700 2rem 'Ubuntu', sans-serif;
+}
+
+.container{
+    height: 25vh;
+    margin: 2.5rem 3rem;
+    display: flex;
+
+}
+
+.container ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.container ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ul li a img{
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.container ul li a figcaption{
+    font: 600 1.5rem 'Montserrat', sans-serif;
+    width: 10rem;
+    text-align: center;
+    color: var(--purple);
+}
