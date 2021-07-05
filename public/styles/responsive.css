@@ -9,15 +9,20 @@
     }
 
     .navbar{
+        display: none;
+    }
+
+    .menu-toggle{
         width: 25%;
         height: 1rem;
-        position: relative;
+        position: absolute;
         margin-right: 1rem;
         cursor: pointer;
+        right: 1rem;
     }
 
 
-    .navbar::before{
+    .menu-toggle::before{
         content: "";
         position: absolute;
         width: 4rem;
@@ -27,7 +32,7 @@
         background: var(--purple);
     }
 
-    .navbar::after{
+    .menu-toggle::after{
         content: "";
         position: absolute;
         width: 2rem;
@@ -42,8 +47,8 @@
     #navbar__list{
         width: 27vw;
         position: absolute;
-        right: -1rem;
-        top: 3rem;
+        right: 0;
+        top: 5rem;
         background: white;
         height: 30vh;
         z-index: 2;

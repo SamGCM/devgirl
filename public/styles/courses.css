@@ -42,7 +42,7 @@ header{
     position: relative;
 }
 
-#navbar__list .list__item:first-child a{
+#navbar__list .list__item:nth-child(2) a{
     color: #4f0ac7;
 }
 
