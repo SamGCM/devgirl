@@ -1,19 +1,26 @@
 body{
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+/* NAVBAR */
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 3rem;
+    height: 10vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.253);
 }
 
 #logo {
     font: 700 3rem 'Ubuntu', sans-serif;
-    color: var(--black);
+    color: var(--white);
     position: relative;
+    margin-left: 3rem;
 }
 
 #logo::before{
@@ -21,13 +28,14 @@ header{
     font: 700 4rem 'Ubuntu', sans-serif;
     color: #DF44BC;
     position: absolute;
-    top: -27px;
-    right: 2.1rem;
+    top: -28px;
+    right: 2.15rem;
 }
 
 .navbar{
-    width: 40%;
+    width: 30%;
     z-index: 2;
+    margin-right: 3rem;
 }
 
 #navbar__list{
@@ -38,16 +46,20 @@ header{
 
 .list__item a{
     font: 600 2rem 'Montserrat', sans-serif;
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.651);
     position: relative;
+}
+
+.list__item a:hover{
+    color: var(--white);
 }
 
 .list__item a:before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
-    bottom: -.5rem;
+    height: 2px;
+    bottom: -2.6rem;
     left: 0;
     background-color: var(--white);
     visibility: hidden;
@@ -63,6 +75,15 @@ header{
     transform: scaleX(1);
 }
 
+@media (max-width: 631.98px) {
+
+    .list__item a:hover{
+        color: var(--black);
+    }
+}
+
+/* CONTAINER MAIN */
+
 #banner{
     display: grid;
     grid-template-columns: 50% 50% ;
@@ -73,30 +94,32 @@ header{
 
 #banner__left{
     grid-area: left;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 #banner__left h1{
-    font: 700 4rem 'Montserrat', sans-serif;
+    font: 700 4rem  'Montserrat', sans-serif;
     margin-left: 3rem;
-    width: 80%;
+    color: var(--white);
 }
 
 #banner__left p{
     font: 500 3rem 'Montserrat', sans-serif;
     margin: 3rem 3rem;
-    width: 80%;
+    color: var(--white);
+
 }
 
 #banner__right{
     grid-area: right;
     display: flex;
     justify-content: center;
-    height: 50vh;
+    height: 70vh;
     overflow: hidden;
+    align-items: center;
 }
 
 lottie-player{

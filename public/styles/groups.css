@@ -1,19 +1,25 @@
 body{
-    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+/* NAVBAR */
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 3rem;
+    height: 10vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.253);
 }
 
 #logo {
     font: 700 3rem 'Ubuntu', sans-serif;
-    color: var(--black);
+    color: var(--white);
     position: relative;
+    margin-left: 3rem;
 }
 
 #logo::before{
@@ -21,13 +27,14 @@ header{
     font: 700 4rem 'Ubuntu', sans-serif;
     color: #DF44BC;
     position: absolute;
-    top: -27px;
-    right: 2.1rem;
+    top: -28px;
+    right: 2.15rem;
 }
 
 .navbar{
-    width: 40%;
+    width: 30%;
     z-index: 2;
+    margin-right: 3rem;
 }
 
 #navbar__list{
@@ -38,22 +45,22 @@ header{
 
 .list__item a{
     font: 600 2rem 'Montserrat', sans-serif;
-    color: var(--black);
+    color: rgba(255, 255, 255, 0.651);
     position: relative;
 }
 
-#navbar__list .list__item:first-child a{
-    color: #4f0ac7;
+.list__item a:hover{
+    color: var(--white);
 }
 
 .list__item a:before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
-    bottom: -.5rem;
+    height: 2px;
+    bottom: -2.6rem;
     left: 0;
-    background-color: var(--black);
+    background-color: var(--white);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -69,6 +76,29 @@ header{
 
 
 
+#item__groups a:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#item__groups a{
+    color: var(--white);
+}
+
+@media (max-width: 631.98px) {
+
+    .list__item a:hover{
+        color: var(--black);
+    }
+    
+    #item__groups a{
+        color: var(--black);
+    }
+}
+
+
+/* CONTAINER MAIN */
 
 main{
     margin-top: 5rem;
@@ -79,16 +109,32 @@ h2{
     font: 700 2rem 'Ubuntu', sans-serif;
 }
 
-.container{
-    height: 25vh;
-    margin: 2.5rem 3rem;
-    display: flex;
+#container__groups{
+    overflow: auto;
+    height: inherit;
 
+    /* CUSTOM SCROLLBAR MOZ */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.253) transparent;
+}
+
+/* CUSTOM SCROLLBAR CHROME & SAFARI */
+
+
+#container__groups h2{
+    margin: 2.5rem 3rem;
+    color: var(--white);
+}
+
+.container{
+    margin: 0 3rem;
+    display: flex;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.253);
 }
 
 .container ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100vw;
     flex-wrap: wrap;
 }
@@ -109,5 +155,6 @@ h2{
     font: 600 1.5rem 'Montserrat', sans-serif;
     width: 10rem;
     text-align: center;
-    color: var(--purple);
+    color: var(--white);
+    margin-top: .7rem;
 }

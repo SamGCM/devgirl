@@ -1,5 +1,15 @@
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 631.98px) {
+    body{
+        overflow: auto;
+    }
+
+    .container-glass{
+        border-radius: 0px;
+        width: auto;
+        height: 100vh;
+    }
+
     header{
         margin:0;
     }
@@ -9,7 +19,7 @@
     }
 
     .navbar{
-        display: none;
+        display: flex;
     }
 
     .menu-toggle{
@@ -26,20 +36,20 @@
         content: "";
         position: absolute;
         width: 4rem;
-        height: .4rem;
+        height: .3rem;
         top: 0;
         right: 0;
-        background: var(--purple);
+        background: var(--white);
     }
 
     .menu-toggle::after{
         content: "";
         position: absolute;
         width: 2rem;
-        height: .4rem;
+        height: .3rem;
         right: 0;
         bottom: 0;
-        background: var(--purple);
+        background: var(--white);
     }
 
     
@@ -48,7 +58,7 @@
         width: 27vw;
         position: absolute;
         right: 0;
-        top: 5rem;
+        top: 7.3rem;
         background: white;
         height: 30vh;
         z-index: 2;
@@ -97,22 +107,23 @@
 
     #banner{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     #banner #banner__left{
         grid-area: 2/1;
         text-align: center;
+        height: 30vh;
     }
 
     #banner #banner__left h1{
         margin: 2rem .2rem;
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-left: 0;
         width: initial;
     }
     #banner #banner__left p{
-        font-size: 2.2rem;
+        font-size: 2rem;
         width: initial;
     }
 
@@ -122,6 +133,7 @@
         display: flex;
         align-items: center;
         z-index: 1;
+        height: 50vh;
     }
 
     lottie-player{
@@ -137,27 +149,48 @@
         top: 0;
         border-radius: 0;
     }
+
+    /* GROUPS */
+
+    #container__groups{
+        width: 100vw;
+        height: 90%;
+    }
+
+    #container__groups h2{
+        margin: 2.5rem 2rem;
+    }
+
+    #container__groups .container ul{
+        justify-content: space-around ;
+    }
 }
 
 /* Dispositivos small (telefones em modo paisagem, com 632px ou mais) */
 @media (min-width: 632px) and (max-width: 767.98px) {
+
+    .container-glass{
+        height: 90vh;
+    }
+
     .navbar{
         width: 50%;
     }
 
     #banner{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     #banner #banner__left{
         grid-area: 2/1;
         text-align: center;
+        height: 30vh;
+        align-items: center;
     }
 
     #banner #banner__left h1{
-        margin-top: 2rem;
-        font-size: 3;
+        font-size: 3rem;
     }
     #banner #banner__left p{
         font-size: 2rem;
@@ -165,6 +198,7 @@
 
     #banner #banner__right{
         grid-area: 1/1;
+        height: 50vh;
     }
 
     .circle{
@@ -175,17 +209,41 @@
         border-top-left-radius: 50%;
         border-bottom-left-radius: 20%;
     }
+
+    /* GROUPS */
+
+    #container__groups{
+        height: 89%;
+    }
+
+    /* COURSES */
+
+    #container__courses{
+        height: 89%;
+    }
 }
 
 /* Dispositivos médios (tablets com 768px ou mais) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container-glass{
+        height: 90vh;
+    }
+
     .navbar{
         width: 35%;
     }
+    
+    #banner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
-    #banner #banner__left h1{
-        font-size: 3.5rem;
-        width: 80%;
+    #banner #banner__left{
+        grid-area: 2/1;
+        text-align: center;
+        height: 30vh;
+        align-items: center;
     }
 
     #banner #banner__left p{
@@ -194,10 +252,23 @@
     }
 
     #banner #banner__right{
-        
+        grid-area: 1/1;
+        height: 50vh;
     }
     .circle{
         width: min(80rem, 65%);
+    }
+
+    /* GROUPS */
+
+    #container__groups{
+        height: 89%;
+    }
+
+    /* COURSES */
+
+    #container__courses{
+        height: 89%;
     }
 }
 
