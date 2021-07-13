@@ -1,7 +1,7 @@
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 @media (max-width: 631.98px) {
     body{
-        overflow: auto;
+        overflow: hidden;
     }
 
     .container-glass{
@@ -58,7 +58,7 @@
         width: 27vw;
         position: absolute;
         right: 0;
-        top: 7.3rem;
+        top: 8.2rem;
         background: white;
         height: 30vh;
         z-index: 2;
@@ -154,7 +154,7 @@
 
     #container__groups{
         width: 100vw;
-        height: 90%;
+        height: 80%;
     }
 
     #container__groups h2{
