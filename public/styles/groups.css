@@ -121,6 +121,15 @@ h2{
 
 /* CUSTOM SCROLLBAR CHROME & SAFARI */
 
+#container__groups::-webkit-scrollbar{
+    width:10px;
+}
+
+#container__groups::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.253);
+    border-radius: 20px;
+}
+
 
 #container__groups h2{
     margin: 2.5rem 3rem;

@@ -58,7 +58,7 @@
         width: 27vw;
         position: absolute;
         right: 0;
-        top: 8.2rem;
+        top: 7rem;
         background: white;
         height: 30vh;
         z-index: 2;
@@ -74,7 +74,6 @@
 
     @keyframes toggle {
         from{
-            border-radius: 0;
             border-bottom-left-radius: 0%;
             border-bottom-right-radius: 0%;
             height: 0;
@@ -83,7 +82,6 @@
             opacity: 0;
         }
         to{
-            border-radius: 5px;
             height: 20vh;
             width: 55vw;
             border-top-left-radius: 0%;
@@ -219,7 +217,7 @@
     /* COURSES */
 
     #container__courses{
-        height: 89%;
+        height: 85%;
     }
 }
 
@@ -262,13 +260,13 @@
     /* GROUPS */
 
     #container__groups{
-        height: 89%;
+        height: 85%;
     }
 
     /* COURSES */
 
     #container__courses{
-        height: 89%;
+        height: 85%;
     }
 }
 
