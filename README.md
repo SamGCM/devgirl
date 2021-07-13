@@ -10,6 +10,7 @@ Objetivo principal: Informar de grupos e cursos. Afinal é bom estudar sozinho, 
 <a href="https://devgirl.vercel.app/">Acesse</a>
 
 
+
 ## 🔨 Tecnologias Utilizadas
 - HTML, CSS e JavaScript
 
