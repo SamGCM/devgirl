@@ -3,23 +3,15 @@
 <img src='screenshots/home.png'>
   
 ## Descrição
-Este projeto para auxiliar a entrada de mulheres em grupos e cursos feitos especialmente para elas.  
-Objetivo principal: Informar de grupos e cursos. Afinal é bom estudar sozinho, mas é melhor com um grupo e apoio motivacional.
+Essa parte do projeto é para criar algo parecido com uma rede social. A ideia é algo parecido com o twitter. O usuário pode escrever textos e postar, e outros podem interagir, curtir e compartilhar.
 
 ## 💻📱 Preview
-<a href="https://devgirl.vercel.app/">Acesse</a>
+<a href="https://www.figma.com/file/VEWWgnaV9TYCmtdwcN4SJ0/Devgirl?node-id=0%3A1">Acesse o layout do figma</a>
 
 
-## 🔨 Tecnologias Utilizadas
-- HTML, CSS e JavaScript
+## 🔨 Tecnologias a serem ytilizadas
+- React.js e styled components.
 
-## 🚀 Desafio
-- Conseguir links e imagens para adicionar
-
-
-## 💡 Novas funcionalidades
-
-- Toggle para menu no modo mobile
 
 ## ⚙️ Executando o projeto 
 
@@ -31,9 +23,13 @@ $ git clone https://github.com/SamGCM/devgirl.git
 
 # Entre no diretório
 $ cd devgirl
+$ cd devgirl-app
 
-# Use o live server para visualizar
-https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+# Instale as dependências
+$ npm install
+
+# Inicie com
+$ yarn start
 ```
 
 ## 🤔 Como contribuir
