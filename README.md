@@ -9,7 +9,7 @@ Essa parte do projeto é para criar algo parecido com uma rede social. A ideia �
 <a href="https://www.figma.com/file/VEWWgnaV9TYCmtdwcN4SJ0/Devgirl?node-id=0%3A1">Acesse o layout do figma</a>
 
 
-## 🔨 Tecnologias a serem ytilizadas
+## 🔨 Tecnologias a serem utilizadas
 - React.js e styled components.
 
 
