@@ -5,6 +5,7 @@ import imgProfile from './imgProfile.jpeg'
 import iconNotification from './notification.svg'
 
 
+
 import * as style from './style.jsx'
 
 export default function Layout({children}){
@@ -35,7 +36,7 @@ export default function Layout({children}){
                         </style.containerImg>
                     </li>
                     <style.nameUser>
-                        <Link href='#'>
+                        <Link href='./user/profile'>
                             <a>Fernando {/* VAI SER SUBSTITUIDO POR API */}</a>
                         </Link>
                     </style.nameUser>

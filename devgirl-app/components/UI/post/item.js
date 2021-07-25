@@ -9,7 +9,9 @@ import iconShare from './images/share.svg'
 
 export default function ItemPost(){
 
-    const navItems = [iconLike, iconComment, iconShare] 
+    const navItems = [iconLike, iconComment, iconShare]
+
+
 
     return(
         <style.flexBox>

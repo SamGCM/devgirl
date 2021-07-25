@@ -25,7 +25,6 @@ export default function Login(){
                         </a>
                     </Link>
                 </style.modal>
-                
             </Container>
         </>
     )

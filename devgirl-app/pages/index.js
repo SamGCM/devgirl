@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-import Container from '../components/UI/container/container.js'
+import Container from '../components/UI/Container/container.js'
 import Feed from '../components/UI/Feed/feed.js'
 import Layout from '../components/UI/layout/layout.js'
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Container>
         <Layout>
           <Feed>
-            
+
           </Feed>
         </Layout>
       </Container>

@@ -6,4 +6,5 @@ export const FlexBox = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
 ` 

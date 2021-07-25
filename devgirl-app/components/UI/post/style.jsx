@@ -41,13 +41,13 @@ export const userName = styled.p`
 `
 
 export const titlePost = styled.h2`
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     width: 100%;
 `
 
 export const descriptionPost = styled.p`
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
     width: 100%;
