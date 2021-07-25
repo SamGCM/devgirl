@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-import imgProfile from './imgProfile.jpeg'
-
 export const container = styled.div`
     width: 90vw;
     height: 70.6rem;
     background: rgb(11,11,11, 36%);
     border-radius: 50px;
+    position: absolute;
 `
 
 export const nav = styled.nav`
