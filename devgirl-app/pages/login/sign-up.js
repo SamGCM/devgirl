@@ -1,4 +1,4 @@
-import * as style from './sign-in-style.jsx'
+import * as style from './style.jsx'
 
 import Head from 'next/head'
 
@@ -7,7 +7,12 @@ import Form from '../../components/User/sign-up/form.js'
 import Auth from '../../components/User/auth/auth.js'
 import Container from '../../components/UI/Container/container.js'
 
+
+
 export default function Login(){
+
+    
+
     return(
         <>
             <Head>

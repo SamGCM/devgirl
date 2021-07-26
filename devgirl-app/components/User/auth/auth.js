@@ -23,7 +23,8 @@ export default function Auth(){
                 src={google} 
                 alt={`Icon for auth google`} 
                 width={50} 
-                height={50}/>
+                height={50}
+                />
             <Image   
                 src={apple} 
                 alt={`Icon for auth apple`} 

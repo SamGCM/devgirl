@@ -1,4 +1,4 @@
-import * as style from './sign-in-style.jsx'
+import * as style from './style.jsx'
 
 import Head from 'next/head'
 

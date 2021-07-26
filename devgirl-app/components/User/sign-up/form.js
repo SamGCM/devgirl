@@ -1,8 +1,8 @@
 import * as style from "./form.jsx"
 
-export default function Form() {
 
-        
+
+export default function Form() {
 
     return (
         <style.form>
